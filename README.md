@@ -43,4 +43,4 @@ To configure your **S3 source** for **Minio** in the Dremio UI:
 
 1. Under *Advanced Options*, check **Enable compatibility mode (experimental)**.
 2. Under *Advanced Options > Connection Properties*, add **fs.s3a.path.style.access** and set the value to **true**.
-3. Under *Advanced Options > Connection Properties*, add the **fs.s3a.endpoint** property and its corresponding server endpoint value (*minio:9000* in the Datafuel ecosystem).
+3. Under *Advanced Options > Connection Properties*, add the **fs.s3a.endpoint** property and its corresponding server endpoint value (*minio:9000* in the ecosystem).
