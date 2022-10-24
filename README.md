@@ -8,6 +8,9 @@ A named volume will be created by Docker Compose. It is typically named dremio_d
 The first part of the name dremio_docker is from the folder name of your docker compose file, the second part comes from the container name within the compose file.
 Please make adjustment to the commands for your environment.
 
+## Dependency
+It would be a good idea to visit https://github.com/usbrandon/minio_docker and get MinIO up and going so you can use it with this repository.
+
 ## Quickstart
 1. Clone repo `git clone https://github.com/datafuel/dremio_docker.git`
 2. Run `cd dremio_docker`
