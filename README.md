@@ -25,12 +25,12 @@ It would be a good idea to visit https://github.com/usbrandon/minio_docker and g
 ###Upgrading and maintaining Dremio.
 
 When upgrading, you should do two thing.
-1. Back up the volume that stores all the runtime data and configuration of Dremio at the current version you were running, i.e. 22.1
+1. Back up the volume that stores all the runtime data and configuration of Dremio at the current version you were running, i.e. 24.0
    I recommend Bret Fishers vackup command on Linux, see https://github.com/BretFisher/docker-vackup
    If you are using Docker Desktop, then use their new Volume Backup & Share functionality.
 2. Then you can run a docker container against a newer image, overriding the entrypoint, and pass in commands to upgrade the KVStore.
    Example:
-   ** docker run --entrypoint /opt/dremio/bin/dremio-admin --mount source=dremio_docker_dremio,target=/opt/dremio/data dremio/dremio-oss:23.0 upgrade**
+   ** docker run --entrypoint /opt/dremio/bin/dremio-admin --mount source=dremio_docker_dremio,target=/opt/dremio/data dremio/dremio-oss:24.0 upgrade**
 
 ### Maintaining jobs, compaction, orphan cleanup etc.
 
